@@ -1,0 +1,421 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 4.5%;
+  border: 10px solid #A3D5FF; 
+}
+
+.main-title {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 100px;
+  color:gray;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;    
+  width: 500px;    
+  margin-top:150px;  
+}
+
+
+#nameinput {
+  width: 500px;
+  height: 70px;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin-left : 700px;
+  margin-top : 40px;
+  background-color: transparent;
+  border-radius : 10px;
+  color : #21659d
+}
+
+#check {
+  all: unset;
+  width: 80px;
+  height: 80px;
+  background-color: #A3D5FF;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.main-button {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 2em;
+  font-family: 'Do Hyeon', sans-serif;
+  padding: 20px 30px;
+  color: gray;
+  background-color: transparent;
+  border: 2px solid rgb(177, 177, 177);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background-color: rgb(177, 177, 177);
+  border: 2px solid rgb(177, 177, 177);
+  color: white;
+}
+
+.main-btn {
+  position: absolute;
+  top: 40px; 
+  right: 80px;               
+  font-size: 2em;
+  font-family: 'Do Hyeon', sans-serif;
+  padding : 20px 30px; 
+  color: gray;
+  background-color: transparent;
+  border: 2px solid rgb(177, 177, 177);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: rgb(177, 177, 177);
+  border: rgb(177, 177, 177);
+  color: white;
+}
+
+
+
+.stack {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  left: 20px;
+  top: 100px;
+}
+
+.stack img {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, z-index 0.3s;
+  object-fit: cover;
+  border: 10px solid #A3D5FF;
+  cursor: pointer;
+}
+
+.img1 {
+  top: 0px;
+  left: 120px;
+  z-index: 1;
+}
+
+.img2 {
+  top: 40px;
+  left: 100px;
+  z-index: 2;
+}
+
+.img3 {
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.stack img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.stack {
+  position: relative;
+  width: 400px;
+  height: 650px; /* 충분한 높이 확보 */
+}
+
+.item {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  transition: transform 0.3s, z-index 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.paper { top: 0px; left: 120px; z-index: 1; }
+.plastic { top: 40px; left: 100px; z-index: 2; }
+.general  { top: 80px; left: 80px;  z-index: 3; }
+
+.postit {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 80px;
+  height: 30px;
+  background-color: #f4ee96;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  transform: rotate(6deg);
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.item:hover .postit {
+  transform: rotate(6deg) translateX(-5px) translateY(-5px);
+}
+
+  .whiteboard {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    width: 450px;
+    border: 10px solid #A3D5FF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  
+  .whiteboard:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+  }
+  
+  
+.duster {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  width: 450px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.duster:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+.mop1 {
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  width: 450px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.mop1:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+
+
+.refrigerator{
+  position: absolute;
+  top: 300px;
+  left: 1380px;
+  width: 450px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.refrigerator:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-text {
+  font-size: 20px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #333;
+  flex: 1;
+}
+
+.whiteboard {
+  position: absolute;
+  top: 300px;
+  left: 700px;
+  width: 450px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.whiteboard:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+
+
+.item:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+
+.postit {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 100px;
+  height: 30px;
+  background-color: #f4ee96;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  transform: rotate(6deg);
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.item:hover .postit {
+  transform: rotate(6deg) translateX(-5px) translateY(-5px);
+}
+
+.ball {
+  top: 30px;
+  left: 150px;
+}
+
+
+.golf {
+  top: 80px;
+  left: 100px;
+}
+
+.minton {
+  top: 360px;
+  left: 800px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-text {
+  font-size: 20px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #333;
+  flex: 1;
+}
+

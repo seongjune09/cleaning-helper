@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>청소🧹</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <img class="main-image" src="people.png" />
+
+  <input type="text" id="nameinput" placeholder="이름을 입력해주세요" />
+  <button id="check" onclick="goToGreetingPage()">확인</button>
+
+  <!-- JS는 HTML의 맨 아래에서 실행 -->
+  <script>
+    function goToGreetingPage() {
+      const name = document.getElementById("nameinput").value.trim();
+      if (name) {
+        const encoded = encodeURIComponent(name);
+        window.location.href = `center.html?name=${encoded}`;
+      } else {
+        alert("이름을 입력해주세요.");
+      }
+    }
+
+    // Enter 키도 눌렀을 때 실행
+    document.getElementById("nameinput").addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        goToGreetingPage();
+      }
+    });
+  </script>
+</body>
+</html>
