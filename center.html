@@ -35,16 +35,17 @@
     }
 
     .button-group {
-      margin-top: 40px;
+      margin-top: 140px;
       display: flex;
-      gap: 30px;
+      gap: 440px;
     }
 
     .menu-button {
       background-color: #A3D5FF;
       color: white;
-      font-size: 20px;
-      padding: 15px 40px;
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 30px;
+      padding: 20px 40px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
@@ -61,13 +62,21 @@
     <div class="greeting-box" id="greeting">이름을 불러오고 있어요...</div>
 
 
+
   <button class="main-button" onclick="location.href='2index.html'"> <- 이름 다시 입력하기</button>
 
   <div class="button-group">
-    <button class="menu-button" onclick="location.href='4index.html'">교실</button>
-    <button class="menu-button" onclick="location.href='5index.html'">기숙사</button>
-    <button class="menu-button" onclick="location.href='6index.html'">체육관</button>
+    <button class="menu-button">교실</button>
+    <button class="menu-button">기숙사</button>
+    <button class="menu-button">체육관</button>
   </div>
+
+  <div class="image-container">
+    <img src="classroom.png" class="image" onclick="location.href='4index.html'">
+    <img src="dom.png" class="image1" onclick="location.href='5index.html'">
+    <img src="gym.png" class="image2" onclick="location.href='6index.html'">
+  </div>
+  
 
   <script>
     const params = new URLSearchParams(window.location.search);
@@ -81,10 +90,11 @@
 
     const greeting = document.getElementById("greeting");
     if (name) {
-      greeting.textContent = `${decodeURIComponent(name)}님 안녕하세요! 우리학교 청소도우미를 이용해주셔서 진심으로 감사합니다. 먼저 어디로 이동해 볼까요?`;
+      greeting.textContent = `${decodeURIComponent(name)}님 안녕하세요 ! 우리 학교 청소 도우미를 이용해주셔서 진심으로 감사합니다. 먼저 어디로 이동해 볼까요?`;
     } else {
       greeting.textContent = "이름을 입력하지 않았어요.";
     }
   </script>
 </body>
+<script src="app.js"></script>
 </html>

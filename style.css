@@ -10,7 +10,7 @@ html {
 .main-title {
   font-family: 'Do Hyeon', sans-serif;
   font-size: 100px;
-  color:gray;
+  color:rgb(167, 164, 164);
   text-align: center;
   margin-top: 50px;
 }
@@ -20,6 +20,17 @@ html {
   margin: 0 auto;    
   width: 500px;    
   margin-top:150px;  
+}
+
+img {
+  display: block;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
 }
 
 
@@ -94,6 +105,52 @@ html {
 
 
 
+.image {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: 500px;
+  left: 160px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, z-index 0.3s;
+  object-fit: cover;
+  border: 10px solid #A3D5FF;
+  cursor: pointer;
+}
+
+.image1 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top : 500px;
+  left: 746px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, z-index 0.3s;
+  object-fit: cover;
+  border: 10px solid #A3D5FF;
+  cursor: pointer;
+}
+
+.image2 {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top:500px;
+  left: 1350px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, z-index 0.3s;
+  object-fit: cover;
+  border: 10px solid #A3D5FF;
+  cursor: pointer;
+}
+
+body {
+  overflow: hidden; 
+}
+
 .stack {
   position: relative;
   width: 400px;
@@ -131,6 +188,7 @@ html {
   left: 80px;
   z-index: 3;
 }
+
 
 .stack img:hover {
   transform: scale(1.05);
@@ -197,7 +255,7 @@ html {
   .whiteboard {
     position: absolute;
     top: 300px;
-    left: 700px;
+    margin-left: 60px;
     width: 450px;
     border: 10px solid #A3D5FF;
     border-radius: 10px;
@@ -210,12 +268,29 @@ html {
     transform: translateY(-15px); 
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
   }
+
+  .window {
+    position: absolute;
+    top: 300px;
+    left: 1400px;
+    width: 450px;
+    border: 10px solid #A3D5FF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  
+  .window:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+  }
   
   
 .duster {
   position: absolute;
   top: 300px;
-  left: 150px;
+  left: 25px;
   width: 450px;
   border: 10px solid #A3D5FF;
   border-radius: 10px;
@@ -232,7 +307,7 @@ html {
 .mop1 {
   position: absolute;
   top: 300px;
-  left: 750px;
+  left: 505px;
   width: 450px;
   border: 10px solid #A3D5FF;
   border-radius: 10px;
@@ -248,10 +323,12 @@ html {
 
 
 
+
+
 .refrigerator{
   position: absolute;
   top: 300px;
-  left: 1380px;
+  left: 985px;
   width: 450px;
   border: 10px solid #A3D5FF;
   border-radius: 10px;
@@ -264,6 +341,27 @@ html {
   transform: translateY(-15px); 
   box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
+
+
+
+.washer1 {
+  position: absolute;
+  top: 400px;
+  left: 1465px;
+  width: 450px;
+  height : 330px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.washer1:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
 
 
 .modal {
@@ -316,14 +414,13 @@ html {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s, z-index 0.3s;
 }
 
 .whiteboard:hover {
   transform: translateY(-15px); 
   box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
-
 
 
 .item:hover {
@@ -377,6 +474,24 @@ html {
 .minton {
   top: 360px;
   left: 800px;
+}
+
+.whiteborad3 {
+  position: absolute;
+  top: 450px;
+  left: 1400px;
+  width: 450px;
+  height: 335px;
+  border: 10px solid #A3D5FF;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.whiteborad3:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
 
 .modal {
