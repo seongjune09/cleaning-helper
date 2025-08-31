@@ -1,4 +1,8 @@
+# 📌 Inflearn Clone Project
 
+![Main Screenshot](https://your-image-link.png)
 
-Uploading 화면 기록 2025-07-16 오후 10.37.29.mov…
+---
 
+## 🎬 Demo Video
+[▶ Watch on YouTube](https://www.youtube.com/watch?v=영상ID)
