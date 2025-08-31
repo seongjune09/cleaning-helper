@@ -5,4 +5,4 @@
 ---
 
 ## 🎬 Demo Video
-[▶ Watch on YouTube]([https://www.youtube.com/watch?v=영상ID](https://www.youtube.com/watch?v=tt6ZB3-Vpd4))
+[▶ Watch on YouTube](https://www.youtube.com/watch?v=tt6ZB3-Vpd4)
