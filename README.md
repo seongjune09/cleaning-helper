@@ -77,5 +77,5 @@ Object.keys(modalContent).forEach(key => {
 
 ---
 
-# [▶ 시연영상 확인하기](https://www.youtube.com/watch?v=tt6ZB3-Vpd4)
+# [▶ 시연 영상 확인하기](https://www.youtube.com/watch?v=tt6ZB3-Vpd4)
 
